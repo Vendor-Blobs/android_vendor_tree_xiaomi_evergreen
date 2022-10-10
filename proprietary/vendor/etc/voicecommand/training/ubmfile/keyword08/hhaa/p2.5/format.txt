@@ -1,0 +1,152 @@
+<KerasNet>
+<Input>
+40 200
+</Input>
+<Conv2dPad>
+8000 42880
+<input_dim_x> 40 <input_dim_y> 200 <input_dim_channel> 1
+<patch_size_x> 3 <patch_size_y> 15 <num_filter> 16
+<patch_stride_x> 1 <patch_stride_y> 3
+<input_padding_x> 1 <input_padding_y> 7
+<output_dim_x> 40 <output_dim_y> 67 <output_dim_channel> 16
+<!EndOfComponent>
+<ReLU> 42880 42880
+<!EndOfComponent>
+<Conv2dPad>
+42880 42880
+<input_dim_x> 40 <input_dim_y> 67 <input_dim_channel> 16
+<patch_size_x> 3 <patch_size_y> 3 <num_filter> 16
+<patch_stride_x> 1 <patch_stride_y> 1
+<input_padding_x> 1 <input_padding_y> 1
+<output_dim_x> 40 <output_dim_y> 67 <output_dim_channel> 16
+<!EndOfComponent>
+<ReLU> 42880 42880
+<!EndOfComponent>
+<MaxPooling2D> 42880 10560
+<input_dim_x> 40 <input_dim_y> 67
+<PoolSize_x> 2 <PoolSize_y> 2
+<PoolStride_x> 2 <PoolStride_y> 2
+<!EndOfComponent>
+<BatchNorm> 10560 10560 16
+<!EndOfComponent>
+<Conv2dPad>
+10560 21120
+<input_dim_x> 20 <input_dim_y> 33 <input_dim_channel> 16
+<patch_size_x> 3 <patch_size_y> 3 <num_filter> 32
+<patch_stride_x> 1 <patch_stride_y> 1
+<input_padding_x> 1 <input_padding_y> 1
+<output_dim_x> 20 <output_dim_y> 33 <output_dim_channel> 32
+<!EndOfComponent>
+<ReLU> 21120 21120
+<!EndOfComponent>
+<Conv2dPad>
+21120 21120
+<input_dim_x> 20 <input_dim_y> 33 <input_dim_channel> 32
+<patch_size_x> 3 <patch_size_y> 3 <num_filter> 32
+<patch_stride_x> 1 <patch_stride_y> 1
+<input_padding_x> 1 <input_padding_y> 1
+<output_dim_x> 20 <output_dim_y> 33 <output_dim_channel> 32
+<!EndOfComponent>
+<ReLU> 21120 21120
+<!EndOfComponent>
+<MaxPooling2D> 21120 5120
+<input_dim_x> 20 <input_dim_y> 33
+<PoolSize_x> 2 <PoolSize_y> 2
+<PoolStride_x> 2 <PoolStride_y> 2
+<!EndOfComponent>
+<BatchNorm> 5120 5120 32
+<!EndOfComponent>
+<Conv2dPad>
+5120 5120
+<input_dim_x> 10 <input_dim_y> 16 <input_dim_channel> 32
+<patch_size_x> 3 <patch_size_y> 3 <num_filter> 32
+<patch_stride_x> 1 <patch_stride_y> 1
+<input_padding_x> 1 <input_padding_y> 1
+<output_dim_x> 10 <output_dim_y> 16 <output_dim_channel> 32
+<!EndOfComponent>
+<ReLU> 5120 5120
+<!EndOfComponent>
+<Conv2dPad>
+5120 5120
+<input_dim_x> 10 <input_dim_y> 16 <input_dim_channel> 32
+<patch_size_x> 3 <patch_size_y> 3 <num_filter> 32
+<patch_stride_x> 1 <patch_stride_y> 1
+<input_padding_x> 1 <input_padding_y> 1
+<output_dim_x> 10 <output_dim_y> 16 <output_dim_channel> 32
+<!EndOfComponent>
+<ReLU> 5120 5120
+<!EndOfComponent>
+<MaxPooling2D> 5120 1280
+<input_dim_x> 10 <input_dim_y> 16
+<PoolSize_x> 2 <PoolSize_y> 2
+<PoolStride_x> 2 <PoolStride_y> 2
+<!EndOfComponent>
+<BatchNorm> 1280 1280 32
+<!EndOfComponent>
+<Conv2dPad>
+1280 2560
+<input_dim_x> 5 <input_dim_y> 8 <input_dim_channel> 32
+<patch_size_x> 3 <patch_size_y> 3 <num_filter> 64
+<patch_stride_x> 1 <patch_stride_y> 1
+<input_padding_x> 1 <input_padding_y> 1
+<output_dim_x> 5 <output_dim_y> 8 <output_dim_channel> 64
+<!EndOfComponent>
+<ReLU> 2560 2560
+<!EndOfComponent>
+<Conv2dPad>
+2560 2560
+<input_dim_x> 5 <input_dim_y> 8 <input_dim_channel> 64
+<patch_size_x> 3 <patch_size_y> 3 <num_filter> 64
+<patch_stride_x> 1 <patch_stride_y> 1
+<input_padding_x> 1 <input_padding_y> 1
+<output_dim_x> 5 <output_dim_y> 8 <output_dim_channel> 64
+<!EndOfComponent>
+<ReLU> 2560 2560
+<!EndOfComponent>
+<MaxPooling2D> 2560 512
+<input_dim_x> 5 <input_dim_y> 8
+<PoolSize_x> 2 <PoolSize_y> 2
+<PoolStride_x> 2 <PoolStride_y> 2
+<!EndOfComponent>
+<BatchNorm> 512 512 64
+<!EndOfComponent>
+<Conv2dPad>
+512 512
+<input_dim_x> 2 <input_dim_y> 4 <input_dim_channel> 64
+<patch_size_x> 3 <patch_size_y> 3 <num_filter> 64
+<patch_stride_x> 1 <patch_stride_y> 1
+<input_padding_x> 1 <input_padding_y> 1
+<output_dim_x> 2 <output_dim_y> 4 <output_dim_channel> 64
+<!EndOfComponent>
+<ReLU> 512 512
+<!EndOfComponent>
+<Conv2dPad>
+512 512
+<input_dim_x> 2 <input_dim_y> 4 <input_dim_channel> 64
+<patch_size_x> 3 <patch_size_y> 3 <num_filter> 64
+<patch_stride_x> 1 <patch_stride_y> 1
+<input_padding_x> 1 <input_padding_y> 1
+<output_dim_x> 2 <output_dim_y> 4 <output_dim_channel> 64
+<!EndOfComponent>
+<ReLU> 512 512
+<!EndOfComponent>
+<MaxPooling2D> 512 128
+<input_dim_x> 2 <input_dim_y> 4
+<PoolSize_x> 2 <PoolSize_y> 2
+<PoolStride_x> 2 <PoolStride_y> 2
+<!EndOfComponent>
+<BatchNorm> 128 128 64
+<!EndOfComponent>
+<AffineTransform-hwc2chw> 128 64 64
+<!EndOfComponent>
+<ReLU> 64 64
+<!EndOfComponent>
+<AffineTransform> 64 64
+<!EndOfComponent>
+<ReLU> 64 64
+<!EndOfComponent>
+<AffineTransform> 64 2
+<!EndOfComponent>
+<Softmax> 2 2
+<!EndOfComponent>
+</KerasNet>

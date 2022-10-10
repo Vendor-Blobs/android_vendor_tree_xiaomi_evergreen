@@ -1,0 +1,13 @@
+ro.product.odm.marketname=POCO M4 Pro 5G
+ro.product.odm.name=evergo_p_in
+ro.product.odm.brand=POCO
+ro.product.odm.device=evergo
+ro.odm.build.fingerprint=POCO/evergo_p_in/evergo:12/SP1A.210812.016/V13.0.3.0.SGBMIXM:user/release-keys
+ro.miui.product.home=com.mi.android.globallauncher
+# ADDITIONAL CUSTOM PROPERTIES
+ro.product.wt.boardid=S98016LA1
+ro.miui.support_fingerprint=true
+ro.product.subproject=S98016LA1
+ro.product.cert=22031116AI
+ro.product.odm.model=22031116AI
+

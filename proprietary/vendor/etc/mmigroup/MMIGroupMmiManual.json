@@ -1,0 +1,30 @@
+{
+  "itemConfig": [
+    {
+      "showName": "VersionInfo"
+    },
+    {
+      "showName": "LCD",
+      "paramconfig": {
+        "auto_switch": false,
+        "lcd_pic": [
+          "R=2000",
+          "G=2000",
+          "B=2000",
+          "L0=2000",
+          "L255=2000",
+          "L127=2000"
+        ]
+      }
+    },
+    {
+      "showName": "LightTEST"
+    },
+    {
+      "showName": "WlanAddress"
+    },
+    {
+      "showName": "BluetoothAddress"
+    }
+  ]
+}

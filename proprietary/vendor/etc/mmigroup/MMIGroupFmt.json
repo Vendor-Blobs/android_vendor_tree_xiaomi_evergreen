@@ -1,0 +1,165 @@
+{
+  "itemConfig": [
+    {
+      "showName": "Accelerometer",
+      "paramconfig": {
+        "support_calibrate": false,
+        "support_axialresult": true,
+        "support_angle45": false,
+        "support_angleneg45": false,
+        "is_auto_calibrate": false,
+        "support_plus_or_minus_45_degrees_either_pass_through": false,
+        "autoTest": {
+          "support_calibrate": false
+        }
+      }
+    },
+    {
+      "showName": "Gyroscope",
+      "paramconfig": {
+        "support_calibrate": false,
+        "support_test": true,
+        "is_auto_calibrate": false
+      }
+    },
+    {
+      "showName": "Magnetic",
+      "paramconfig": {
+        "support_calibrate": false,
+        "support_draw": false,
+        "support_test": true,
+        "self_calibrate": false
+      }
+    },
+	{
+      "showName": "Optical"
+    },
+    {
+      "showName": "Optical_Back"
+    },
+    {
+      "showName": "Battery",
+      "support_autoTest_autopass": true,
+      "paramconfig": {
+        "is_miui_battery": true,
+        "support_afc_charge": false,
+        "check_usb_is_unplug": false,
+        "is_show_batteryTemperature": true,
+        "support_typec_check": false,
+        "Voltage": {
+          "min": 2500,
+          "max": 4550
+        },
+        "temp": {
+          "min": -20,
+          "max": 800
+        },
+        "ChargerVoltage": {
+          "min": 4600,
+          "max": 4600
+        },
+        "ChargerCurrent": {
+          "min": 3000,
+          "max": 3000
+        },
+        "errorBatteryId": [
+          "Fail",
+          "NULL",
+          "Not found",
+          "Generic_Battery",
+          "BATTERY_NOT_DEFAULT"
+        ]
+      }
+    },
+    {
+      "showName": "fingerprint",
+      "paramconfig": {
+	    "support_enrolTest_quality":false,
+        "support_enrolTest": false,
+        "support_identifyTest": false
+      }
+    },
+    {
+      "showName": "GPS"
+    },
+    {
+      "showName": "MainCamera",
+      "support_autoTest_autopass": true,
+      "paramconfig": {
+        "cameraId": 0,
+        "support_takepicture": true,
+        "support_camera_match": false,
+        "support_trigger_focus": true,
+        "takepicture_not_save_picture": true,
+        "auto_takepicture": true,
+        "is_open_flashLight": true,
+        "support_cameraCheck": true,
+        "support_cameraCheck_for_8bit": true,
+        "pic_format": "JPEG",
+        "==pic_format==": "JPEG or RAW10,YUV_420_888,RAW_SENSOR",
+        "pic_compression": "",
+        "==pic_compression==": "图片压缩格式，不设置则不压缩，仅支持zip"
+      },
+      "requestComm": [
+        "MainCamera"
+      ]
+    },
+    {
+      "showName": "WideCamera",
+      "support_autoTest_autopass": true,
+      "paramconfig": {
+        "cameraId": 2,
+        "support_takepicture": true,
+        "takepicture_not_save_picture": true,
+        "camera_Rotation": 0,
+        "auto_takepicture": true,
+        "is_open_flashLight": false,
+        "support_cameraCheck": true,
+        "support_cameraCheck_for_8bit": true
+      }
+    },
+    {
+      "showName": "MacroCamera",
+      "support": true,
+      "action": "com.mmigroup.action.CAMERATESTTWO",
+      "support_autoTest_autopass": true,
+      "paramconfig": {
+        "cameraId": 4,
+        "support_takepicture": true,
+        "camera_Rotation": 180,
+        "takepicture_not_save_picture": true,
+        "auto_takepicture": true
+      },
+      "requestComm": [
+        "MacroCamera"
+      ]
+    },
+    {
+      "showName": "FrontCamera",
+      "support_autoTest_autopass": true,
+      "paramconfig": {
+        "cameraId": 1,
+        "support_takepicture": true,
+        "support_camera_match": false,
+        "support_trigger_focus": true,
+        "takepicture_not_save_picture": true,
+        "auto_takepicture": true,
+        "camera_Rotation": 180,
+        "is_open_flashLight": false,
+        "support_cameraCheck": true,
+        "support_cameraCheck_for_8bit": true,
+        "pic_format": "JPEG",
+        "==pic_format==": "JPEG or RAW10,YUV_420_888,RAW_SENSOR",
+        "pic_compression": "",
+        "==pic_compression==": "图片压缩格式，不设置则不压缩，仅支持zip"
+      },
+      "requestComm": [
+        "FrontCamera"
+      ]
+    },
+    {
+      "showName": "BluetoothDevice",
+      "support_autoTest_autopass": true
+    }
+  ]
+}

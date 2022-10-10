@@ -1,0 +1,5 @@
+service vendor.charge-service /vendor/bin/hw/vendor.mediatek.hardware.charge@1.0-service
+    interface vendor.mediatek.hardware.charge@1.0::ICharge default
+    class hal
+    user system
+    group system graphics

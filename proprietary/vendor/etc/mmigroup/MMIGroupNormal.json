@@ -1,0 +1,327 @@
+{
+  "mmigroupConfig": {
+    "hideDiskMountUi": true
+  },
+  "systemConfig": {
+    "Attestation": false,
+    "Widewine": false,
+    "IFAA_Version": false,
+    "FIDO_Version": false
+  },
+  "itemConfig": [
+    {
+      "showName": "VersionInfo",
+      "paramconfig": {
+        "AddInfo": {
+          "TPcolor": "any",
+          "CPUID": "any",
+          "TP": "any",
+          "RPMB": "any",
+          "CameraInfo": "any",
+          "BuildNumber": "any",
+          "BaseBandVersion": "any",
+          "KernelVersion": "any",
+          "LCM": "any",
+          "verifiedbootstate": "green",
+          "System_Verity": "true"
+        }
+      }
+    },
+    {
+      "showName": "SimCard_HotPlug"
+    },
+    {
+      "showName": "Sdcard_Intent"
+    },
+    {
+      "showName": "KeyPad",
+      "paramconfig": {
+        "keyCode": [
+          "VOLUME_UP",
+          "VOLUME_DOWN",
+          "POWER"
+        ]
+      }
+    },
+	{
+      "showName": "TpOpenShort"
+    },
+    {
+      "showName": "LCD",
+      "paramconfig": {
+        "auto_switch": false,
+        "lcd_pic": [
+          "R=2000",
+          "G=2000",
+          "B=2000"
+        ]
+      }
+    },
+    {
+      "showName": "TouchScreen",
+      "paramconfig": {
+        "support_finger_track": false,
+        "support_random_draw": true,
+        "draw_path_width": 120,
+        "draw_rect_height": 110
+      }
+    },
+    {
+      "showName": "LightTEST",
+      "paramconfig": {
+        "Light": [
+          {
+            "type": "flashlight",
+            "name": "MainFlashlight",
+            "id": 0,
+            "method": 1
+          },
+          {
+            "type": "backlight",
+            "name": "Backlight",
+            "brightness": [
+              10,
+              128,
+              255
+            ]
+          },
+          {
+            "type": "infraredled",
+            "name": "InfraredLed",
+            "id": 0
+          }
+        ]
+      }
+    },
+    {
+      "showName": "MainCamera"
+    },
+    {
+      "showName": "WideCamera"
+    },
+    {
+      "showName": "MacroCamera"
+    },
+	{
+      "showName": "DualBackCamera"
+    },
+    {
+      "showName": "FrontCamera"
+    },
+    {
+      "showName": "Charge",
+      "paramconfig": {
+        "is_miui_battery": false,
+        "support_afc_charge": false,
+        "check_usb_is_unplug": true,
+        "is_show_batteryTemperature": true,
+        "support_typec_check": true,
+        "support_pd_charging_check": true,
+        "Voltage": {
+          "min": 2500,
+          "max": 4550
+        },
+        "temp": {
+          "min": -20,
+          "max": 800
+        },
+        "ChargerVoltage": {
+          "min": 4600,
+          "max": 4600
+        },
+        "ChargerCurrent": {
+          "min": 100,
+          "max": 6100
+        },
+        "errorBatteryId": [
+          "Fail",
+          "NULL",
+          "Not found",
+          "Generic_Battery",
+          "BATTERY_NOT_DEFAULT"
+        ]
+      }
+    },
+    {
+      "showName": "WlanAP"
+    },
+    {
+      "showName": "WlanAddress"
+    },
+    {
+      "showName": "BluetoothDevice"
+    },
+    {
+      "showName": "BluetoothAddress"
+    },
+    {
+      "showName": "GPS"
+    },
+    {
+      "showName": "OTG",
+      "paramconfig": {
+        "support_udisk": true,
+        "is_show_storage": true,
+        "support_typec": true,
+        "support_mouse": true
+      }
+    },
+    {
+      "showName": "Magnetic"
+    },
+    {
+      "showName": "Accelerometer",
+      "paramconfig": {
+        "support_calibrate": false,
+        "support_axialresult": true,
+        "support_angle45": true,
+        "support_angleneg45": true,
+        "is_auto_calibrate": false,
+        "support_plus_or_minus_45_degrees_either_pass_through": false,
+        "autoTest": {
+          "support_calibrate": false
+        }
+      }
+    },
+    {
+      "showName": "Gyroscope",
+      "paramconfig": {
+        "support_calibrate": false,
+        "support_test": true,
+        "is_auto_calibrate": false
+      }
+    },
+    {
+      "showName": "Optical"
+    },
+    {
+      "showName": "Optical_Back"
+    },
+    {
+      "showName": "Proximity",
+      "action": "com.mmigroup.action.PROXIMITY_SS",
+      "paramconfig": {
+        "distance_tolerance": 0.5,
+        "rawData": {
+          "min": 0,
+          "max": 5000
+        },
+        "do_calibration": {
+          "support": false,
+          "calibration_apply": true,
+          "calibration_scheme": "SS_qcom",
+          "4_cm_minus_no_cover_min": 5,
+          "3_cm_minus_no_cover_min": 20,
+          "3_cm_minus_4_cm_min": 8,
+          "3_cm": {
+            "min": 0,
+            "max": 99999
+          },
+          "3_cm_offset": {
+            "min": 400,
+            "max": 99999
+          },
+          "4_cm": {
+            "min": 0,
+            "max": 99999
+          },
+          "noCover": {
+            "min": 0,
+            "max": 8000
+          },
+          "tpmodel_table": {
+            "default": {
+              "ALL": 0.36
+            }
+          }
+        }
+      }
+    },
+    {
+      "showName": "Speaker"
+    },
+    {
+      "showName": "Receiver"
+    },
+    {
+      "showName": "Recultra"
+    },
+    {
+      "showName": "MainMicToHeadPhone",
+      "support": true,
+      "action": "com.mmigroup.action.audioloop.AUDIOLOOPBACK",
+      "paramconfig": {
+        "volume_rate": 1,
+        "loop_type": "manual_loop",
+        "hasHeadPhone": true,
+        "audioConfig": [
+          "mmitest=on;inputdevice=mainmic",
+          "mmitest=on;outputdevice=headphone"
+        ],
+        "markedWords": "mainmictoHeadphone_speakernotify"
+      },
+      "requestComm": [
+        "HeadPhone",
+        "MainMic"
+      ]
+    },
+    {
+      "showName": "SubMicToHeadPhone",
+      "support": true,
+      "action": "com.mmigroup.action.audioloop.AUDIOLOOPBACK",
+      "paramconfig": {
+        "volume_rate": 1,
+        "loop_type": "manual_loop",
+        "hasHeadPhone": true,
+        "audioConfig": [
+          "mmitest=on;inputdevice=submic",
+          "mmitest=on;outputdevice=headphone"
+        ],
+        "markedWords": "submictoHeadphone_speakernotify"
+      },
+      "requestComm": [
+        "HeadPhone",
+        "SubMic"
+      ]
+    },
+    {
+      "showName": "HeadSet",
+      "support": true,
+      "action": "com.mmigroup.action.HEADPHONE",
+      "paramconfig": {
+        "volume_rate": 0.66,
+        "disable_phone_volumekey": false,
+        "is_need_headphone_plug_out": false,
+        "keyCode": [
+          "VOLUME_UP",
+          "VOLUME_DOWN",
+          "HEADSETHOOK"
+        ]
+      },
+      "requestComm": [
+        "HeadPhone"
+      ]
+    },
+    {
+      "showName": "FM"
+    },
+    {
+      "showName": "fingerprint"
+    },
+    {
+      "showName": "Vibrator",
+      "paramconfig": {
+        "is_auto_vibrate": false
+      }
+    },
+    {
+      "showName": "NFC"
+    },
+    {
+      "showName": "Sar"
+    },
+    {
+      "showName": "SIMCardTray"
+    }
+  ]
+}

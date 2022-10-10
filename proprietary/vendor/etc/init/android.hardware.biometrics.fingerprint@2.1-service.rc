@@ -1,0 +1,21 @@
+service vendor.fps_hal /vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service
+    # "class hal" causes a race condition on some devices due to files created
+    # in /data. As a workaround, postpone startup until later in boot once
+    # /data is mounted.
+    class late_start
+    user system
+    group system input uhid
+    writepid /dev/cpuset/system-background/tasks
+
+on boot
+    chown system system /sys/bus/spi/devices/spi5.0/clk_enable
+    chown system system /sys/bus/spi/devices/spi5.0/wakeup_enable
+    chown system system /sys/bus/spi/devices/spi5.0/fingerdown_wait
+    chown system system /sys/bus/spi/devices/spi5.0/irq
+    chmod 0200 /sys/bus/spi/devices/spi5.0/clk_enable
+    chmod 0200 /sys/bus/spi/devices/spi5.0/wakeup_enable
+    chmod 0600 /sys/bus/spi/devices/spi5.0/irq
+    chmod 0200 /sys/bus/spi/devices/spi5.0/fingerdown_wait
+
+on property:vendor.fps_hal.restartimes=max
+    stop vendor.fps_hal
